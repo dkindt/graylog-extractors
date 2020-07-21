@@ -8,14 +8,14 @@
           "type": "csv",
           "config": {
             "trim_leading_whitespace": false,
-            "column_header": "RuleNumber,SubRuleNumber,Anchor,Tracker,Interface,Reason,Action,Direction,IPVersion,Class,FlowLabel,HopLimit,Protocol,ProtocolID,Length,SourceIP,DestIP,SourcePort,DestPort,DataLength,TCPFlags,Sequence,ACK,Window,URG,Options"
+            "column_header": "rule_num,sub_rule_num,anchor,tracker,intetrface,reason,action,direction,ip_version,class,flow_label,hop_limit,protocol,protocol_id,length,source_ip,dest_ip,source_port,dest_port,data_length,tcp_flags,sequence,ack,window,urg,options"
           }
         }
       ],
       "order": 0,
       "cursor_strategy": "copy",
       "source_field": "message",
-      "target_field": "FilterData",
+      "target_field": "filter_data",
       "extractor_config": {
         "regex_value": "^.*filterlog:(.*)$"
       },
@@ -30,14 +30,14 @@
           "type": "csv",
           "config": {
             "trim_leading_whitespace": false,
-            "column_header": "RuleNumber,SubRuleNumber,Anchor,Tracker,Interface,Reason,Action,Direction,IPVersion,Class,FlowLabel,HopLimit,Protocol,ProtocolID,Length,SourceIP,DestIP,SourcePort,DestPort,DataLength"
+            "column_header": "rule_num,sub_rule_num,anchor,tracker,interface,reason,action,direction,ip_version,class,flow_label,hop_limit,protocol,protocol_id,length,source_ip,dest_ip,source_port,dest_port,data_length"
           }
         }
       ],
       "order": 0,
       "cursor_strategy": "copy",
       "source_field": "message",
-      "target_field": "FilterData",
+      "target_field": "filter_data",
       "extractor_config": {
         "regex_value": "^.*filterlog:(.*)$"
       },
@@ -52,7 +52,7 @@
           "type": "csv",
           "config": {
             "trim_leading_whitespace": false,
-            "column_header": "RuleNumber,SubRuleNumber,Anchor,Tracker,Interface,Reason,Action,Direction,IPVersion,TOS,ECN,TTL,ID,Offset,Flags,ProtocolID,Protocol,Length,SourceIP,DestIP,SourcePort,DestPort,DataLength,TCPFlags,Sequence,ACK,Window,URG,Options",
+            "column_header": "rule_num,sub_rule_num,anchor,tracker,interface,reason,action,direction,ip_version,tos,ecn,ttl,id,offset,flags,protocol_id,protocol,length,source_ip,dest_ip,source_port,dest_port,data_length,tcp_flags,sequence,ack,window,urg,options",
             "strict_quotes": false
           }
         }
@@ -60,7 +60,7 @@
       "order": 0,
       "cursor_strategy": "copy",
       "source_field": "message",
-      "target_field": "FilterData",
+      "target_field": "filter_data",
       "extractor_config": {
         "regex_value": "^.*filterlog:(.*)$"
       },
@@ -75,7 +75,7 @@
           "type": "csv",
           "config": {
             "trim_leading_whitespace": false,
-            "column_header": "RuleNumber,SubRuleNumber,Anchor,Tracker,Interface,Reason,Action,Direction,IPVersion,TOS,ECN,TTL,ID,Offset,Flags,ProtocolID,Protocol,Length,SourceIP,DestIP,SourcePort,DestPort,DataLength",
+            "column_header": "rule_num,sub_rule_num,anchor,tracker,interface,reason,action,direction,ip_version,tos,ecn,ttl,id,offset,flags,protocol_id,protocol,length,source_ip,dest_ip,source_port,dest_port,data_length",
             "strict_quotes": false
           }
         }
@@ -83,7 +83,7 @@
       "order": 0,
       "cursor_strategy": "copy",
       "source_field": "message",
-      "target_field": "FilterData",
+      "target_field": "filter_data",
       "extractor_config": {
         "regex_value": "^.*filterlog:(.*)$"
       },
@@ -98,14 +98,13 @@
           "type": "csv",
           "config": {
             "trim_leading_whitespace": false,
-            "column_header": "RuleNumber,SubRuleNumber,Anchor,Tracker,Interface,Reason,Action,Direction,IPVersion,TOS,ECN,TTL,ID,Offset,Flags,ProtocolID,Protocol,Length,SourceIP,DestIP,ICMP_Type,ICMP_ID,ICMP_Sequence"
-          }
+            "column_header": "rule_num,sub_rule_num,anchor,tracker,interface,reason,action,direction,ip_version,tos,ecn,ttl,id,offset,flags,protocol_id,protocol,length,source_ip,dest_ip,icmp_type,icmp_id,icmp_sequence"          }
         }
       ],
       "order": 0,
       "cursor_strategy": "copy",
       "source_field": "message",
-      "target_field": "FilterData",
+      "target_field": "filter_data",
       "extractor_config": {
         "regex_value": "^.*filterlog:(.*)$"
       },
@@ -120,14 +119,14 @@
           "type": "csv",
           "config": {
             "trim_leading_whitespace": false,
-            "column_header": "RuleNumber,SubRuleNumber,Anchor,Tracker,Interface,Reason,Action,Direction,IPVersion,TOS,ECN,TTL,ID,Offset,Flags,ProtocolID,Protocol,Length,SourceIP,DestIP,ICMP_Type,ICMP_DestIP,ICMP_MTU"
+            "column_header": "rule_num,sub_rule_num,anchor,tracker,interface,reason,action,direction,ip_version,tos,ecn,ttl,id,offset,flags,protocol_id,protocol,length,source_ip,dest_ip,icmp_type,icmp_dest_ip,icmp_mtu"
           }
         }
       ],
       "order": 0,
       "cursor_strategy": "copy",
       "source_field": "message",
-      "target_field": "FilterData",
+      "target_field": "filter_data",
       "extractor_config": {
         "regex_value": "^.*filterlog:(.*)$"
       },
@@ -142,14 +141,14 @@
           "type": "csv",
           "config": {
             "trim_leading_whitespace": false,
-            "column_header": "RuleNumber,SubRuleNumber,Anchor,Tracker,Interface,Reason,Action,Direction,IPVersion,TOS,ECN,TTL,ID,Offset,Flags,ProtocolID,Protocol,Length,SourceIP,DestIP,ICMP_Type,ICMP_Description"
+            "column_header": "rule_num,sub_rule_num,anchor,tracker,interface,reason,action,direction,ip_version,tos,ecn,ttl,id,offset,flags,protocol_id,protocol,length,source_ip,dest_ip,icmp_type,icmp_description"
           }
         }
       ],
       "order": 0,
       "cursor_strategy": "copy",
       "source_field": "message",
-      "target_field": "FilterData",
+      "target_field": "filter_data",
       "extractor_config": {
         "regex_value": "^.*filterlog:(.*)$"
       },
@@ -164,14 +163,14 @@
           "type": "csv",
           "config": {
             "trim_leading_whitespace": false,
-            "column_header": "RuleNumber,SubRuleNumber,Anchor,Tracker,Interface,Reason,Action,Direction,IPVersion,TOS,ECN,TTL,ID,Offset,Flags,ProtocolID,Protocol,Length,SourceIP,DestIP,ICMP_Type,ICMP_DestIP,ICMP_ProtocolID"
+            "column_header": "rule_num,sub_rule_num,anchor,tracker,interface,reason,action,direction,ip_version,tos,ecn,ttl,id,offset,flags,protocol_id,protocol,length,source_ip,dest_ip,icmp_type,icmp_dest_ip,icmp_protocol_id"
           }
         }
       ],
       "order": 0,
       "cursor_strategy": "copy",
       "source_field": "message",
-      "target_field": "FilterData",
+      "target_field": "filter_data",
       "extractor_config": {
         "regex_value": "^.*filterlog:(.*)$"
       },
@@ -186,14 +185,14 @@
           "type": "csv",
           "config": {
             "trim_leading_whitespace": false,
-            "column_header": "RuleNumber,SubRuleNumber,Anchor,Tracker,Interface,Reason,Action,Direction,IPVersion,TOS,ECN,TTL,ID,Offset,Flags,ProtocolID,Protocol,Length,SourceIP,DestIP,ICMP_Type,ICMP_DestIP,ICMP_ProtocolID,ICMP_Port"
+            "column_header": "rule_num,sub_rule_num,anchor,tracker,interface,reason,action,direction,ip_version,tos,ecn,ttl,id,offset,flags,protocol_id,protocol,length,source_ip,dest_ip,icmp_type,icmp_dest_ip,icmp_protocol_id,icmp_port"
           }
         }
       ],
       "order": 0,
       "cursor_strategy": "copy",
       "source_field": "message",
-      "target_field": "FilterData",
+      "target_field": "filter_data",
       "extractor_config": {
         "regex_value": "^.*filterlog:(.*)$"
       },
@@ -208,14 +207,13 @@
           "type": "csv",
           "config": {
             "trim_leading_whitespace": false,
-            "column_header": "RuleNumber,SubRuleNumber,Anchor,Tracker,Interface,Reason,Action,Direction,IPVersion,TOS,ECN,TTL,ID,Offset,Flags,ProtocolID,Protocol,Length,SourceIP,DestIP,ICMP_Type,ICMP_ID,ICMP_Sequence"
-          }
+            "column_header": "rule_num,sub_rule_num,anchor,tracker,interface,reason,action,direction,ip_version,tos,ecn,ttl,id,offset,flags,protocol_id,protocol,length,source_ip,dest_ip,icmp_type,icmp_id,icmp_sequence"          }
         }
       ],
       "order": 0,
       "cursor_strategy": "copy",
       "source_field": "message",
-      "target_field": "FilterData",
+      "target_field": "filter_data",
       "extractor_config": {
         "regex_value": "^.*filterlog:(.*)$"
       },
@@ -230,14 +228,14 @@
           "type": "csv",
           "config": {
             "trim_leading_whitespace": false,
-            "column_header": "RuleNumber,SubRuleNumber,Anchor,Tracker,Interface,Reason,Action,Direction,IPVersion,TOS,ECN,TTL,ID,Offset,Flags,ProtocolID,Protocol,Length,SourceIP,DestIP,ICMP_Type,ICMP_ID,ICMP_Sequence,ICMP_otime,ICMP_rtime,ICMP_ttime"
+            "column_header": "rule_num,sub_rule_num,anchor,tracker,interface,reason,action,direction,ip_version,tos,ecn,ttl,id,offset,flags,protocol_id,protocol,length,source_ip,dest_ip,icmp_type,icmp_id,icmp_sequence,icmp_otime,icmp_rtime,icmp_ttime"
           }
         }
       ],
       "order": 0,
       "cursor_strategy": "copy",
       "source_field": "message",
-      "target_field": "FilterData",
+      "target_field": "filter_data",
       "extractor_config": {
         "regex_value": "^.*filterlog:(.*)$"
       },
@@ -252,14 +250,14 @@
           "type": "csv",
           "config": {
             "trim_leading_whitespace": false,
-            "column_header": "RuleNumber,SubRuleNumber,Anchor,Tracker,Interface,Reason,Action,Direction,IPVersion,TOS,ECN,TTL,ID,Offset,Flags,ProtocolID,Protocol,Length,SourceIP,DestIP,ICMP_Type,ICMP_Description"
+            "column_header": "rule_num,sub_rule_num,anchor,tracker,interface,reason,action,direction,ip_version,tos,ecn,ttl,id,offset,flags,protocol_id,protocol,length,source_ip,dest_ip,icmp_type,icmp_description"
           }
         }
       ],
       "order": 0,
       "cursor_strategy": "copy",
       "source_field": "message",
-      "target_field": "FilterData",
+      "target_field": "filter_data",
       "extractor_config": {
         "regex_value": "^.*filterlog:(.*)$"
       },
